@@ -111,7 +111,7 @@ uint8_t I2C_Receive8Bit(void)
 
     return buffer;
 }
-
+//通过I2C从设备中读取数据
 uint16_t I2C_SimpleReadFromDevice(void)
 {
     uint8_t buffer1, buffer2;
@@ -133,6 +133,7 @@ uint16_t I2C_SimpleReadFromDevice(void)
     return (((uint16_t)buffer1) << 8) | buffer2;
 }
 
+//读取按键数
 uint8_t KEYBOARD_ReadKey(void)
 {
     //读取数据
